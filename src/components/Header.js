@@ -11,19 +11,29 @@ const GlobalStyle = createGlobalStyle`
  }
 `
 const Header = styled.header`
+  display:flex;
+  justify-content:center;
+  align-items:center;
   border:solid;
   width:100%;
-  height:110vh;
-  background-image:url(${BackImg});
-  background-size:80%;
-  background-repeat: no-repeat;
+  height:125vh;
 `
+const Img = styled.img`
+ width: 95%;
+ height:98%
+`
+
 
 export default function App(){
   return(
     <Header>
         <GlobalStyle/>
-        
+        <Img src={BackImg}/>
+        <div>
+            <ul>
+                
+            </ul>
+        </div>
     </Header>
   )
 }
