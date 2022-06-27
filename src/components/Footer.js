@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components";
-import Facebook from "./src/img/Facebook.png"
-import Instagram from "./src/img/Instagram.png"
-import Pinterest from "./src/img/Pinterest.png"
-import Twitter from "./src/img/Twitter.png"
+import Facebook from "../img/Facebook.png"
+import Instagram from "../img/Instagram.png"
+import Pinterest from "../img/Pinterest.png"
+import Twitter from "../img/Twitter.png"
 
 
 const GlobalStyle = createGlobalStyle`
