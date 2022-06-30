@@ -12,13 +12,11 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
  }
 `
 const Content = styled.div`
  width: 100%;
  display: flex;
- border: solid purple;
  flex-direction: column;
  p{
   text-align: center;
@@ -60,16 +58,29 @@ const Button = styled.button`
  background-color: #DFE4DE;
  border: solid #373737;
 `
-const Lista = styled.nav`
+const Lista = styled.div`
  width:100%;
  height: 50vh;
  display: flex;
- justify-content: right;
+ justify-content: center;
+ align-items: center;
  background-color: #F2F4F1;
  cursor: pointer;
+`
+const Ul = styled.ul`
+ width: 40%;
+ display: flex;
+ justify-content: space-evenly;
  li{
   list-style:none;
  }
+ margin-left: 550px;
+`
+
+const Img = styled.img`
+ width:40px;
+ height: 40px;
+ margin: 5px;
 `
 
 export default function App(){
@@ -84,15 +95,15 @@ export default function App(){
      </Sub>
      <Foot>
         <Lista>
-          <img src={Instagram}/>
-          <img src={Twitter}/>
-          <img src={Facebook}/>
-          <img src={Pinterest}/>
-         <ul>
+          <Img src={Instagram}/>
+          <Img src={Twitter}/>
+          <Img src={Facebook}/>
+          <Img src={Pinterest}/>
+          <Ul>
            <li>ABOUT</li>
            <li>RECIPES</li>
            <li>SUBSCRIBE</li>
-          </ul>
+          </Ul>
         </Lista>
       </Foot>
       <p style={{backgroundColor:"#446061"}}>Layout produzido por Dandara e Joy para o curso Vai na Web para fins exclusivamente educacionais. Referência: https://br.pinterest.com/pin/AVuDlMAl4GsQiM6nijH9YbG9bsNKpompSEOEHzig6GJ58AnUtMkSy7k/</p>
