@@ -18,6 +18,7 @@ const Header = styled.header`
   align-items:center;
   width:100%;
   height:125vh;
+  position:relative;
 `
 const Img = styled.img`
 display:flex;
@@ -26,29 +27,59 @@ position:absolute;
  height:92.6%;
 `
 
-const Image = styled.img`
-  display:flex;
-  width:50%;
-  height:40%;
-
-`
-
 const Div = styled.div`
-  border:solid red;
-  justify-content:center
-  align-items:center;
+display:flex;
+  width:95%;
+  justify-content:center;
+  align-items:space-around;;
   position:absolute;
-  left:5%;
-  top:10vh;
+  left:3%;
+  top:8vh;
 
 `
+const Image = styled.img`
+  justify-content:flex-start;
+  align-items:flex-start;
+  display:flex;
+  height:10%;
+  margin-right:45vw;
+
+`
+
 const Nav = styled.nav`
+ justify-content:flex-end;
  display:flex;
- justify-content:center;
- align-items:center;
- width:50%;
- height:30vh;
- font-family: 'M PLUS Rounded 1c', sans-serif;
+ width:35%;
+ margin-left: 8vw;
+ 
+
+`
+const Ul = styled.ul`
+display: flex;
+justify-content: space-evenly;
+color: black;
+list-style: none;
+font-size: 20px;
+font-weight: light;
+`
+const Li = styled.li`
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+   width:6vw;
+   margin-left:2vw;
+   
+`
+const List = styled.li`
+display:flex;
+align-items:center;
+justify-content:center;
+width:10vw;
+margin-left:2vw;
+border:solid black;
+  &:hover{
+  cursor:pointer;
+  }
 `
 
 
@@ -57,16 +88,16 @@ export default function App(){
     <Header>
         <GlobalStyle/>
         <Img src={BackImg}/>
-        <Div>
+      <Div>
         <Image src={Logo}/>
-        </Div>
         <Nav>
-            <ul>
-              <li>About</li>
-              <li>Recipes</li>
-              <li>Subscribe</li>
-            </ul>
+            <Ul>
+              <Li>ABOUT</Li>
+              <Li>RECIPES</Li>
+              <List>SUBSCRIBE</List>
+            </Ul>
         </Nav>
+      </Div>
         <h1>RECIPES</h1>
     </Header>
   )
